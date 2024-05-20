@@ -1,4 +1,17 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+  width: 1920px;
+}
+
+nav {
+  padding: 36px 0px;
+}
+
+.nav-list li {
+  padding: 4px 8px 4px 8px;
+  text-align: center;
+  font-family: 'Noto Sans TC', sans-serif;
 }
