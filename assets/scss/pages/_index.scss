@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  block-size: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .nav-list a {
   text-decoration: none;
   color: black;
