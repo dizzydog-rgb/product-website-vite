@@ -1,21 +1,299 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
+
+
+
 body {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif !important;
   block-size: border-box;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondary;
+  }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+
+
+.wrap {
+  max-width: 1920px;
 }
+
+.container {
+  max-width: 1296px;
+}
+
+
 
 .nav-list a {
-  text-decoration: none;
   color: black;
-
 }
 
-.index-title {
-  font-size: 100px;
+.left-block {
+  width: 40%;
+}
+
+.self {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+
+  p {
+    line-height: 1.5;
+    color: #5B5B5B;
+    margin-bottom: 16px;
+  }
+
+  .en-title {
+    color: #C1C1C1;
+    margin-bottom: 60px;
+  }
+}
+
+
+.position-relative {
+  position: relative;
+}
+
+.noel-selfie {
+  height: 100%;
+  width: auto;
+  max-width: 60%;
+  right: 0;
+}
+
+.mark-bg {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.spceTravel-part-bg {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true');
+}
+
+.spceTravel-part {
+  .left-block {
+    margin-top: 80px;
+  }
+
+  .item {
+    align-items: center;
+
+    .content {
+      width: 100%;
+      padding: 80px 40px 40px 40px;
+      background-color: #FFFFFF1A;
+      color: #F1F1F1;
+      border-radius: 24px;
+
+      h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-bottom: 24px;
+      }
+
+      ul {
+        gap: 16px;
+        padding: 0;
+        margin-bottom: 40px;
+      }
+
+      li {
+        background-color: #FFFFFF;
+        color: $third;
+        border-radius: 16px;
+        padding: 4px 12px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .intro {
+        width: 40%;
+        background-color: #000000;
+        border-radius: 5px;
+        padding: 16px 32px;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0 auto;
+
+        .material-icons {
+          display: inline-block;
+          font-size: inherit;
+          line-height: inherit;
+          vertical-align: middle;
+          transform: translateY(-.1em); // 取自segmentfault
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+.money-part {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true');
+
+  .left-block {
+    width: 50%;
+    background-color: #0A101380;
+    padding: 200px 0;
+    justify-content: end;
+
+    .content {
+      width: 56%;
+      padding: 80px 40px 40px 40px;
+      margin-right: 10%;
+      background-color: #FFFFFF1A;
+      color: #F1F1F1;
+      border-radius: 24px;
+      float: right;
+
+      h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-bottom: 24px;
+      }
+
+      ul {
+        gap: 16px;
+        padding: 0;
+        margin-bottom: 40px;
+      }
+
+      li {
+        background-color: #FFFFFF;
+        color: $third;
+        border-radius: 16px;
+        padding: 4px 12px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .intro {
+        width: 40%;
+        background-color: #000000;
+        border-radius: 5px;
+        padding: 16px 32px;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0 auto;
+
+        .material-icons {
+          display: inline-block;
+          font-size: inherit;
+          line-height: inherit;
+          vertical-align: middle;
+          transform: translateY(-.1em); // 取自segmentfault
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .right-block {
+    width: 50%;
+  }
+}
+
+.beauty-part-bgc {
+  background-color: #0D0C0780;
+}
+
+.beauty-part-bg {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true');
+}
+
+.bearty-part {
+  .left-block {
+    margin-top: 190px;
+    margin-bottom: 120px;
+  }
+
+  .item {
+    align-items: center;
+
+    .content {
+      width: 100%;
+      padding: 80px 40px 40px 40px;
+      background-color: #FFFFFF1A;
+      color: #F1F1F1;
+      border-radius: 24px;
+
+      h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-bottom: 24px;
+      }
+
+      ul {
+        gap: 16px;
+        padding: 0;
+        margin-bottom: 40px;
+      }
+
+      li {
+        background-color: #FFFFFF;
+        color: $third;
+        border-radius: 16px;
+        padding: 4px 12px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .intro {
+        width: 40%;
+        background-color: #000000;
+        border-radius: 5px;
+        padding: 16px 32px;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0 auto;
+
+        .material-icons {
+          display: inline-block;
+          font-size: inherit;
+          line-height: inherit;
+          vertical-align: middle;
+          transform: translateY(-.1em); // 取自segmentfault
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+.hr {
+  color: $primary;
 }

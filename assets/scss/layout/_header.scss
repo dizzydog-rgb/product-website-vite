@@ -1,9 +1,5 @@
-* {
-  font-family: 'Noto Sans TC', sans-serif;
-}
-
-.container {
-  width: 1920px;
+body .row {
+  margin: 0 auto;
 }
 
 nav {
@@ -16,12 +12,6 @@ nav {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
-.current-page li.active a {
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  color: #000;
-}
 
 .current-page {
   font-weight: 800;
