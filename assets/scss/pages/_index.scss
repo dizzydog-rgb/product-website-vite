@@ -69,9 +69,8 @@ body {
 }
 
 .noel-selfie {
-  height: 100%;
-  width: auto;
-  max-width: 60%;
+  height: auto;
+  width: 60%;
   right: 0;
 }
 
@@ -79,6 +78,20 @@ body {
   background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true');
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.headline {
+  justify-content: center;
+  padding: 120px 0 80px;
+
+  img {
+    height: 100%;
+    align-self: center;
+  }
+
+  h2 {
+    margin: 0px 16px;
+  }
 }
 
 .spceTravel-part-bg {
@@ -135,6 +148,7 @@ body {
         font-weight: 700;
         line-height: 1.5;
         margin: 0 auto;
+        margin-top: 40px;
 
         .material-icons {
           display: inline-block;
@@ -202,6 +216,7 @@ body {
         font-weight: 700;
         line-height: 1.5;
         margin: 0 auto;
+        margin-top: 40px;
 
         .material-icons {
           display: inline-block;
@@ -228,10 +243,10 @@ body {
   background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true');
 }
 
-.bearty-part {
+.beauty-part {
   .left-block {
-    margin-top: 190px;
-    margin-bottom: 120px;
+    margin-top: 176px;
+    margin-bottom: 112px;
   }
 
   .item {
@@ -279,6 +294,7 @@ body {
         font-weight: 700;
         line-height: 1.5;
         margin: 0 auto;
+        margin-top: 40px;
 
         .material-icons {
           display: inline-block;
@@ -293,6 +309,126 @@ body {
   }
 }
 
+.service-part-bg {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true');
+}
+
+.service-part {
+  padding-bottom: 120px;
+
+  .service-list {
+    column-gap: 24px;
+
+    .service-item {
+      background-color: #1E1E1E;
+      text-align: center;
+      padding: 80px 0px;
+      border-radius: 16px;
+
+      h3 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: #FFFFFF;
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .more-detail {
+    text-align: center;
+    margin-top: 80px;
+
+    margin-bottom: 120px;
+
+    h2 {
+      font-weight: 600;
+      color: $third;
+      margin-bottom: 40px;
+    }
+
+    .intro {
+      width: 22%;
+      background-color: #000000;
+      border-radius: 5px;
+      padding: 16px 32px;
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin: 0 auto;
+
+      .material-icons {
+        display: inline-block;
+        font-size: inherit;
+        line-height: inherit;
+        vertical-align: middle;
+        transform: translateY(-.1em); // 取自segmentfault
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.article-part {
+  .article-item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    img {
+      border-radius: 8px;
+      border: 1px solid #F1F1F1;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      color: $third;
+    }
+
+    .tag-list {
+      padding: 0;
+      justify-content: space-between;
+      gap: 10px;
+
+      .tag {
+        background-color: $primary;
+        color: $third;
+        padding: 4px 12px;
+        font-size: 16px;
+        line-height: 1.5;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .pagination {
+    width: 100%;
+    height: 100%;
+    margin: 40px 0 120px;
+  }
+
+  .pagination-dot {
+    position: relative;
+    left: 46%;
+    top: 50%;
+    word-spacing: 16px;
+  }
+
+  .pagination-dot span {
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #E9E9E9;
+  }
+
+  .pagination span.active {
+    background-color: #000000;
+  }
+}
 
 .hr {
   color: $primary;
