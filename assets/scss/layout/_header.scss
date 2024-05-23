@@ -59,3 +59,89 @@ nav {
   left: -2px;
   border-width: 0 0 1px 1px;
 }
+
+.hambuger {
+  display: none;
+  cursor: pointer;
+}
+
+.hambuger-list {
+  text-align: center;
+  padding: 40px 0px;
+  font-size: 20px;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid $primary;
+  gap: 28px;
+  position: fixed;
+  width: 100%;
+  top: -200;
+  background-color: #fffFFF;
+  z-index: 999;
+  transition: left 0.3s ease; 
+  display: none;
+
+  li {
+    margin: 0 auto;
+    width: 25%;
+  }
+
+  a {
+    color: #000000;
+  }
+}
+
+.close-icon {
+  display: none;
+}
+
+.hambuger-list-show {
+  display: flex;
+}
+
+.unshow {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+
+@media(max-width:992px) {
+  .header {
+    nav {
+      padding: 12px 0;
+    }
+
+    .nav-list li {
+      display: none;
+    }
+
+    .hambuger {
+      display: block;
+
+      .menu-icon {
+        position: relative;
+        float: right;
+        bottom: 32px;
+        font-size: 30px;
+      }
+
+      .close-icon {
+        position: relative;
+        float: right;
+        bottom: 32px;
+        font-size: 30px;
+      }
+
+
+
+
+
+
+
+    }
+  }
+}

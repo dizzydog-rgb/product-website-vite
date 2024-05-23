@@ -9,6 +9,10 @@
 .info {
   padding: 120px 0px;
 
+  img {
+    width: 33.3%;
+  }
+
   img,
   p {
     margin-bottom: 24px;
@@ -51,6 +55,32 @@
 
     a {
       color: #FFFFFF;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+
+    .row {
+      flex-direction: column;
+      padding: 0 34.5px;
+
+      .col-6,
+      .col-3 {
+        width: 100%;
+        text-align: center;
+      }
+
+      .info {
+        padding: 40px 0;
+      }
+
+      .contact-info {
+        padding: 0;
+        margin-bottom: 40px;
+      }
     }
   }
 }

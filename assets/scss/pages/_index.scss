@@ -100,7 +100,7 @@ body {
 
 .spceTravel-part {
   .left-block {
-    margin-top: 80px;
+    padding-top: 80px;
   }
 
   .item {
@@ -169,7 +169,7 @@ body {
   .left-block {
     width: 50%;
     background-color: #0A101380;
-    padding: 200px 0;
+    padding: 190px 0;
     justify-content: end;
 
     .content {
@@ -320,7 +320,8 @@ body {
     column-gap: 24px;
 
     .service-item {
-      background-color: #1E1E1E;
+      background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true');
+      background-size: cover;
       text-align: center;
       padding: 80px 0px;
       border-radius: 16px;
@@ -432,4 +433,352 @@ body {
 
 .hr {
   color: $primary;
+}
+
+.br-desktop {
+  display: none;
+}
+
+.img-unshow {
+  display: none;
+}
+
+.more-article-mobile {
+  display: none;
+}
+
+@media(max-width:375px) {
+  .br-mobile {
+    display: block;
+  }
+
+  .img-show {
+    display: block;
+  }
+
+  .self-part {
+    flex-direction: column-reverse;
+
+    .noel-selfie {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .left-block {
+      width: 0;
+    }
+
+    .self {
+      text-align: center;
+      word-break: keep-all;
+
+      h1 {
+        font-size: 32px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+
+      .social-media-list {
+        margin: 0 auto;
+        gap: 16px;
+      }
+    }
+  }
+
+  .headline {
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  .spceTravel-part-bg {
+    background-image: none;
+  }
+
+  .spceTravel-part {
+
+    .container {
+      padding: 0;
+      flex-direction: column;
+
+      .left-block {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true');
+        background-size: cover;
+        width: 100%;
+        text-align: center;
+
+        img {
+          width: 78%;
+        }
+      }
+
+      .item {
+        width: 100%;
+        text-align: center;
+
+        .content {
+          padding: 0;
+
+          h2 {
+            color: #1E1E1E;
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 8px;
+          }
+
+          p {
+            color: #5B5B5B;
+            font-size: 16px;
+            margin-bottom: 16px;
+          }
+
+          ul {
+            justify-content: center;
+            gap: 8px;
+
+            li {
+              background-color: $primary;
+            }
+
+            margin-bottom: 20px;
+          }
+
+          .intro {
+            width: 35%;
+            font-size: 16px;
+            padding: 8px 16px;
+            margin-bottom: 48px;
+          }
+        }
+
+
+      }
+    }
+
+  }
+
+  .money-part {
+    background-image: none;
+    flex-direction: column;
+
+    .img-show img {
+      width: 100%;
+    }
+
+    .left-block {
+      padding: 24px 0 0 0;
+      width: 100%;
+      text-align: center;
+      background-color: #fffFFF;
+
+      .content {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+
+        h2 {
+          color: #1E1E1E;
+          font-size: 20px;
+          margin-top: 24px;
+          margin-bottom: 8px;
+        }
+
+        p {
+          color: #5B5B5B;
+          font-size: 16px;
+          margin-bottom: 16px;
+        }
+
+        ul {
+          justify-content: center;
+          gap: 8px;
+
+          li {
+            background-color: $primary;
+          }
+
+          margin-bottom: 20px;
+        }
+
+        .intro {
+          width: 35%;
+          font-size: 16px;
+          padding: 8px 16px;
+          margin-bottom: 48px;
+        }
+      }
+    }
+  }
+
+  .beauty-part-bg {
+    background-image: none;
+  }
+
+  .beauty-part-bgc {
+    background-color: #FFFFFF;
+  }
+
+  .beauty-part {
+
+    .container {
+      padding: 0;
+      flex-direction: column;
+
+      .beauty-part-bgc-mobile {
+        width: 100%;
+        background-color: #0D0C0780;
+      }
+
+      .left-block {
+        margin: 0;
+        padding: 0;
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true');
+        background-size: cover;
+        background-position: bottom 0 right -160px;
+        width: 100%;
+        text-align: center;
+
+        img {
+          width: 78%;
+          margin: 90px 0;
+        }
+      }
+
+      .item {
+        width: 100%;
+        text-align: center;
+
+        .content {
+          padding: 0;
+
+          h2 {
+            color: #1E1E1E;
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 8px;
+          }
+
+          p {
+            color: #5B5B5B;
+            font-size: 16px;
+            margin-bottom: 16px;
+          }
+
+          ul {
+            justify-content: center;
+            gap: 8px;
+
+            li {
+              background-color: $primary;
+            }
+
+            margin-bottom: 20px;
+          }
+
+          .intro {
+            width: 35%;
+            font-size: 16px;
+            padding: 8px 16px;
+            margin-bottom: 48px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .service-part {
+    background-color: #FAFAFA;
+    background-image: none;
+    padding-bottom: 80px;
+
+    .headline {
+      padding: 80px 0px 40px;
+    }
+
+    .service-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      padding: 0 34.5px;
+
+      .service-item {
+        width: 100%;
+        height: auto;
+        font-size: 24px;
+        padding: 76px 0;
+      }
+    }
+
+    .more-detail {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 0;
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 32px;
+      }
+
+      .intro {
+        width: 57%;
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+    }
+  }
+
+  .article-part {
+    .row {
+      gap: 46px;
+    }
+
+    .article-item {
+      padding: 0;
+      gap: 16px;
+    }
+
+    .pagination {
+      margin: 0;
+    }
+
+    .pagination-dot {
+      display: none;
+    }
+
+    .more-article-mobile {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 80px;
+
+      .intro {
+        width: 35%;
+        background-color: #000000;
+        border-radius: 5px;
+        padding: 8px 16px;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0 auto;
+
+        .material-icons {
+          display: inline-block;
+          font-size: inherit;
+          line-height: inherit;
+          vertical-align: middle;
+          transform: translateY(-.1em); // 取自segmentfault
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  hr {
+    display: none;
+  }
 }
