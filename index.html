@@ -6,39 +6,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/jquery-3.7.1.min.js"></script>
   <title>index</title>
-  <script type="module" crossorigin src="/product-website-vite/assets/main-19c940fb.js"></script>
-  <link rel="stylesheet" href="/product-website-vite/assets/main-b2b63626.css">
+  <script type="module" crossorigin src="/product-website-vite/assets/main-ac8857cd.js"></script>
+  <link rel="stylesheet" href="/product-website-vite/assets/main-a1df93a7.css">
 </head>
 
 <body>
+
   <header>
     <div class="header wrap">
-      <nav class="row container">
-        <div class="col-3"><img
-            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg"
-            alt="logo"></div>
-        <ul class="col-6 d-flex justify-content-around fs-6 nav-list">
-          <li class="current-page"><a href="/pages/index.html"><span></span>首頁</a></li>
-          <li><a href="/pages/product.html"><span></span>作品集</a></li>
-          <li><a href="/pages/service.html"><span></span>服務項目</a></li>
-          <li><a href="/pages/blog.html"><span></span>部落格</a></li>
-          <li><a href="/pages/contactMe.html"><span></span>聯絡我</a></li>
-        </ul>
-        <div class="col-3"></div>
-      </nav>
+        <nav class="row container">
+            <div class="col-3"><img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg"
+                    alt="logo"></div>
+            <ul class="col-6 d-flex justify-content-around fs-6 nav-list">
+                <li class="current-page"><a href="/pages/index.html"><span></span>首頁</a></li>
+                <li><a href="/pages/product.html"><span></span>作品集</a></li>
+                <li><a href="/pages/service.html"><span></span>服務項目</a></li>
+                <li><a href="/pages/blog.html"><span></span>部落格</a></li>
+                <li><a href="/pages/contactMe.html"><span></span>聯絡我</a></li>
+            </ul>
+            <div class="hambuger">
+                <span class="material-icons menu-icon">
+                    menu
+                </span>
+                <span class="material-icons close-icon">
+                    close
+                </span>
+                <ul class="hambuger-list">
+                    <li class="current-page"><a href="/pages/index.html"><span></span>首頁</a></li>
+                    <li><a href="/pages/product.html"><span></span>作品集</a></li>
+                    <li><a href="/pages/service.html"><span></span>服務項目</a></li>
+                    <li><a href="/pages/blog.html"><span></span>部落格</a></li>
+                    <li><a href="/pages/contactMe.html"><span></span>聯絡我</a></li>
+                </ul>
+            </div>
+            <div class="col-3"></div>
+        </nav>
     </div>
-  </header>
-
+</header>
   <div class="self-part wrap d-flex">
     <div class="container d-flex">
       <div class="left-block"></div>
-      <div class="self ">
+      <div class="self">
         <h1>Hi！我是 Noel</h1>
-        <p>具有十年經驗的<span class="mark-bg"> 資深 UI 工程師 </span>兼<span class="mark-bg"> 前端工程師 </span><br>技術雙修並行，熱衷於優化使用者的網頁體驗
+        <p>具有十年經驗的<br class="br-desktop br-mobile"><span class="mark-bg"> 資深 UI 工程師 </span>兼<span class="mark-bg"> 前端工程師 </span><br>技術雙修並行，熱衷於優化使用者的網頁體驗
         </p>
         <p class="en-title">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
-        <div class="d-flex">
+        <div class="d-flex social-media-list">
           <img
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/instagram.svg"
             alt="IG">
@@ -90,6 +106,7 @@
   </div>
 
   <div class="wrap money-part d-flex">
+    <div class="img-unshow img-show"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-sm.png?raw=true" alt="money"></div>
     <div class="left-block d-flex">
       <div class="content">
         <h2>理財APP</h2>
@@ -116,9 +133,12 @@
   <div class="beauty-part wrap beauty-part-bg">
     <div class="beauty-part-bgc">
       <div class="container row">
-        <div class="col-7 left-block"><img
+        <div class="col-7 left-block">
+          <div class="beauty-part-bgc-mobile">
+          <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3.png?raw=true"
-            alt="work1"></div>
+            alt="work1">
+        </div></div>
         <div class="col-5 item d-flex">
           <div class="content">
             <h2>醫美診所官網</h2>
@@ -230,6 +250,14 @@
         <span></span>
         <span></span>
         <span></span>
+      </div>
+      <div class="more-article-mobile container">
+        <a href="/">
+          <div class="intro">更多文章<span class="material-icons">
+              arrow_forward</div>
+          </span>
+        </a>
+        </div>
       </div>
     </div>
   </div>
