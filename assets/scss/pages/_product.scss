@@ -1,0 +1,265 @@
+.quote-part {
+    padding: 80px 0px;
+    background-color: #FAFAFA;
+
+    .quote {
+        h4 {
+            font-size: 24px;
+            color: #1E1E1E;
+        }
+    }
+
+    .experence {
+        h5 {
+            margin-bottom: 12px;
+            color: #5b5b5b;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        h5::after {
+            content: "";
+            position: absolute;
+            background-color: #5B5B5B;
+            width: 24px;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+        }
+
+        p {
+            color: $third;
+        }
+
+    }
+}
+
+.card-part {
+    margin-top: 40px;
+    gap: 24px;
+
+    img {
+        border: 1px solid $primary;
+        border-radius: 8px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    .card {
+        margin-top: 80px;
+        overflow: hidden;
+        border: none;
+    }
+
+    .h5 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    p {
+        color: $secondary;
+    }
+
+
+    .tag-item {
+        padding: 4px 12px;
+        background-color: $primary;
+        border-radius: 16px;
+    }
+}
+
+nav {
+    padding: 0;
+}
+
+.pagination {
+    padding: 72px 0px 120px;
+}
+
+.page-item .page-link {
+    color: #1E1E1E;
+    border-radius: 4px !important;
+    padding: 2px 13px;
+    font-size: 24px;
+    border: none;
+}
+
+.page-item .page-link:hover {
+    color: #FFFFFF;
+    background-color: #1E1E1E;
+}
+
+.page-item:first-child .page-link {
+    color: #FFFFFF;
+    background-color: #1E1E1E;
+}
+
+.modal {
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-body {
+        img {
+            border-radius: 16px;
+        }
+
+        .title {
+            margin: 40px 0;
+
+            h5 {
+                font-size: 28px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+        }
+
+        .info {
+            margin-bottom: 40px;
+
+            .info-l {
+                width: 60%;
+                padding-left: 56px;
+                padding-right: 72px;
+                color: #1E1E1E;
+            }
+
+            .info-r {
+                width: 40%;
+                padding-right: 56px;
+                padding-left: 24px;
+                color: #5B5B5B;
+                border-left: 1px solid #C1C1C1;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .visual {
+            padding: 80px 0;
+            background-color: #FAFAFA;
+
+            div:first-child {
+                margin-bottom: 56px;
+            }
+
+            h4 {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .quote-part {
+        padding: 40px 0 80px;
+
+        .quote {
+            h4 {
+                line-height: 1.5;
+                font-size: 20px;
+            }
+        }
+
+        .experence {
+            padding: 0 70px;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .experence2B {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    .card-part {
+        margin-top: 32px;
+
+        .card {
+            margin-top: 48px;
+            padding: 0;
+            overflow: hidden;
+            border: none;
+
+            .content {
+                padding: 0 16px;
+            }
+        }
+
+        .h5 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        p {
+            color: $secondary;
+        }
+
+
+        .tag-item {
+            padding: 4px 12px;
+            background-color: $primary;
+            border-radius: 16px;
+        }
+    }
+
+    .pagination {
+        padding: 48px 0px 80px;
+    }
+
+    .modal {
+        .modal-body {
+            .title {
+                margin: 24px 0;
+            }
+
+            .info {
+                margin-bottom: 24px;
+
+                .info-l {
+                    width: 80%;
+                    padding: 0;
+                    margin: 0 auto;
+                    padding-bottom: 24px;
+                    text-align: center;
+                }
+
+                .info-r {
+                    width: 80%;
+                    padding: 24px 0 0 0;
+                    margin: 0 auto;
+                    gap: 24px;
+                    border-top: 1px solid #C1C1C1;
+                    border-left: none;
+                    text-align: center;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .visual {
+                padding: 40px 16px;
+                background-color: #FAFAFA;
+
+                div:first-child {
+                    margin-bottom: 56px;
+                }
+            }
+        }
+    }
+}
