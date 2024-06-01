@@ -438,6 +438,18 @@ body {
   display: none;
 }
 
+@media (max-width: 991px) {
+
+  .spceTravel-part,
+  .money-part,
+  .beauty-part {
+    .tag {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .br-mobile {
     display: block;
