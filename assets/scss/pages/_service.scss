@@ -1,0 +1,230 @@
+.flowchart-part {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/process-bg.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 120px;
+
+    .headline {
+        color: #FFFFFF;
+    }
+
+    .flowchart-list {
+        .flowchart-item {
+            background-color: $third;
+            border: 1px solid $secondary;
+
+
+            .tourney {
+                font-family: Tourney, sans-serif;
+                color: #919191;
+                font-size: 72px;
+                padding: 32px;
+                margin-bottom: 0;
+            }
+
+            .flowchart-content {
+                h3 {
+                    color: #FFFFFF;
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                }
+
+                p {
+                    color: #E9E9E9;
+                    font-size: 20px;
+                    margin-bottom: 0;
+
+                }
+            }
+        }
+
+        .material-icons {
+            display: inline-block;
+            font-size: 32px;
+            color: #5B5B5B;
+            text-align: center;
+        }
+    }
+}
+
+.price-part {
+    padding-bottom: 120px;
+
+    .price-list {
+        gap: 24px;
+
+        .price-item {
+            color: #5B5B5B;
+            background-color: #FAFAFA;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px #00000014;
+
+            .service-title {
+                h3 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    position: relative;
+                }
+
+            }
+
+            .service-price {
+                .price {
+                    color: #1E1E1E;
+                    font-size: 32px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .dash {
+            height: 1px;
+            width: 100%;
+            max-width: 10%;
+            border: 1px solid #C1C1C1;
+        }
+    }
+}
+
+.customerCase-part {
+    background-color: #FAFAFA;
+    padding-bottom: 120px;
+
+    img {
+        border: 1px solid $primary;
+        border-radius: 8px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    .row {
+        margin-top: -80px;
+    }
+
+    .card {
+        background-color: #FAFAFA;
+        overflow: hidden;
+        border: none;
+        margin-top: 80px;
+        padding: 0px 12px;
+
+        .content {
+            padding: 0 12px;
+        }
+    }
+
+    .h5 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    p {
+        color: $secondary;
+    }
+
+
+    .tag-item {
+        padding: 4px 12px;
+        background-color: $primary;
+        border-radius: 16px;
+    }
+}
+
+.QA-part {
+    padding-bottom: 120px;
+
+    .QA-list {
+        gap: 24px;
+
+        .QA-item {
+            border: 1px solid #E9E9E9;
+            border-radius: 8px;
+            padding: 24px;
+
+            h4 {
+                color: #3B3B3B;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                color: #5B5B5B;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .flowchart-part {
+
+        .flowchart-list {
+            .flowchart-item {
+
+
+                .tourney {
+                    ;
+                    font-size: 48px;
+                    padding: 24px;
+                }
+
+                .flowchart-content {
+                    h3 {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .price-part {
+
+        .price-list {
+
+            .price-item {
+                padding: 24px;
+
+                .service-title {
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                }
+
+                .service-price {
+                    .price {
+                        font-size: 20px;
+                        ;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    .QA-part {
+        .QA-list {
+            .QA-item {
+                h4 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
