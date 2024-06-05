@@ -392,6 +392,7 @@ body {
         padding: 4px 12px;
         font-size: 16px;
         border-radius: 16px;
+        text-align: center;
       }
     }
   }
@@ -438,6 +439,28 @@ body {
 .more-article-mobile {
   display: none;
 }
+
+.mySwiper {
+  .swiper-container {
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .swiper-button-next {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    color: $secondary;
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    color: $secondary;
+  }
+}
+
 
 @media (max-width: 991px) {
 
